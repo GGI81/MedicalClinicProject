@@ -15,7 +15,6 @@
             <li><a href="doctors.html">Доктори</a></li>
             <li><a href="visit.php">Запази Час</a></li>
             <li><a href="about.html">За Автора</a></li>
-            
         </ul>
     </nav>
 
@@ -26,7 +25,7 @@
         <div class="centered-form">
             <h2>Запази Час</h2>
             <form action="php/submitForm.php" method="post">
-                <label for="name">Имае:</label>
+                <label for="name">Име:</label>
                 <input type="text" id="name" name="name" required><br>
 
                 <label for="last_name">Фамилия:</label>
@@ -34,9 +33,8 @@
 
                 <label for="email">Ел. Поща:</label>
                 <input type="email" id="email" name="email" required><br>
-
+                
                 <label for="dropdown">Изберете час:</label>
-
                 <?php include "php/dropdown.php"?>
 
                 <br>
@@ -47,10 +45,9 @@
     </div>
 
     <footer>
-    <p>&copy; Георги Иванов 12k №7. Всички права са запазени.</p>
+        <p>&copy; Георги Иванов 12k №7. Всички права запазени.</p>
     </footer>
 
-    
     <script src="js/navScript.js"></script>
 </body>
 </html>

@@ -63,9 +63,8 @@
 
 .clinic-title {
     color: #333;
-    font-size: 28px;
+    font-size: 35px;
     margin-top: -100px;
-    text-decoration: underline;
 }
 
 #carousel-container {
@@ -110,13 +109,8 @@
 }
 
 .card:nth-child(3) li {
-    display: inline; 
+    display:block; 
     margin-right: 15px;
-    text-decoration: underline;
-}
-
-.card h2 {
-    text-decoration: underline;
 }
 
 .carousel-navigation {

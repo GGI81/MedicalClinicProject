@@ -1,13 +1,14 @@
 <?php
 include 'connection.php';
 
-$query = "SELECT AppointmentDate FROM Appointments WHERE ClientID IS NULL";
+$query = "SELECT AppointmentDate, Specialist FROM Appointments WHERE ClientID IS NULL";
 $result = mysqli_query($connection, $query);
 
 if ($result) {
     echo '<select id="dropdown" name="dropdown">';
     while ($row = mysqli_fetch_assoc($result)) {
-        echo '<option value="' . $row['AppointmentDate'] . '">' . $row['AppointmentDate'] . '</option>';
+        $option_text = $row['AppointmentDate'] . ' - ' . $row['Specialist'];
+        echo '<option value="' . $row['AppointmentDate'] . '">' . $option_text . '</option>';
     }
     echo '</select>';
 } else {

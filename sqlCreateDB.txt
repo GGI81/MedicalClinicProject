@@ -12,22 +12,23 @@ CREATE TABLE Clients (
 CREATE TABLE Appointments (
     ID INTEGER PRIMARY KEY AUTO_INCREMENT,
     AppointmentDate TEXT,
+    Specialist TEXT,
     ClientID INTEGER,
     FOREIGN KEY(ClientID) REFERENCES clients(ID) ON DELETE SET NULL
 );
 
 ----- SQL To add free Appointments ----------
 
-INSERT INTO Appointments (AppointmentDate)
+INSERT INTO Appointments (AppointmentDate, Specialist)
 VALUES
-    ('Понеделник 12:00 PM'),
-    ('Понеделник 16:30 PM'),
-    ('Вторник 10:00 AM'),
-    ('Вторник 15:45 PM'),
-    ('Сряда 13:00 PM'),
-    ('Четвъртък 14:30 PM'),
-    ('Четвъртък 17:00 PM'),
-    ('Петък 10:00 AM'),
-    ('Петък 13:45 PM'),
-    ('Петък 15:30 PM'),
-    ('Петък 17:15 PM');
+    ('Понеделник 12:00 PM', 'Кардиология'),
+    ('Понеделник 16:30 PM', 'Ортопедия'),
+    ('Вторник 10:00 AM', 'Кардиология'),
+    ('Вторник 15:45 PM', 'Педиатрия'),
+    ('Сряда 13:00 PM', 'Педиатрия'),
+    ('Четвъртък 14:30 PM', 'Акушерство и гинекология'),
+    ('Четвъртък 17:00 PM', 'Акушерство и гинекология'),
+    ('Петък 10:00 AM', 'Кардиолотия'),
+    ('Петък 13:45 PM', 'Ортопедия'),
+    ('Петък 15:30 PM', 'Педиатрия'),
+    ('Петък 17:15 PM', 'Акушерство и гинекология');
