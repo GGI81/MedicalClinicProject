@@ -1,0 +1,135 @@
+#begging {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.logo-container {
+    position: absolute;
+    top: 60px; 
+    left: 20px; 
+    padding: 10px;
+    animation: flyIn 2s ease forwards;
+    display: flex;
+}
+
+.flying-logo {
+    width: 300px;
+    opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+    .flying-logo {
+        width: 250px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .flying-logo {
+        width: 200px;
+    }
+}
+
+@keyframes flyIn {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.title-container {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    .title-container {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .title-container {
+        font-size: 16px;
+    }
+}
+
+.clinic-title {
+    color: #333;
+    font-size: 28px;
+    margin-top: -100px;
+    text-decoration: underline;
+}
+
+#carousel-container {
+    width: 50%;
+    margin: 50px auto;
+    margin-top: 20%;
+    overflow: hidden;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    height: 200px;
+    
+}
+
+@media screen and (max-width: 768px) {
+    #carousel-container {
+        width: 90%;
+    }
+}
+@media screen and (max-width: 480px) {
+    #carousel-container {
+    width: 95%;
+    }
+}
+
+#carousel {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.card {
+    flex: 0 0 96%;
+    padding: 20px;
+    text-align: center;
+    background-color: #3498db;
+    color: white;
+    height: 200px;
+}
+
+.card:nth-child(3) ul {
+    text-align: center;
+    padding-left: 0;
+}
+
+.card:nth-child(3) li {
+    display: inline; 
+    margin-right: 15px;
+    text-decoration: underline;
+}
+
+.card h2 {
+    text-decoration: underline;
+}
+
+.carousel-navigation {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.carousel-navigation button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin: 0 5px;
+    border-radius: 5px;
+}

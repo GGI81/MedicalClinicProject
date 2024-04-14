@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Медицинска клиника Здраве</title>
+    <link rel="icon" href="images/icon.ico">
+    <link rel="stylesheet" href="style/common_style.css">
+    <link rel="stylesheet" href="style/specific_style/indexStyle.css">
+
+    <style>
+        /* Additional styles for About Me page */
+        .about-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80vh; /* Adjust as needed */
+        }
+
+        .about-content {
+            display: flex;
+            align-items: center;
+            max-width: 800px; /* Adjust as needed */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color: #f9f9f9;
+        }
+
+        .about-image {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .about-image img {
+            width: 200px;
+            max-width: 100%;
+            border-radius: 30px;
+            border: 3px solid #449047;
+            margin-left: 40px;
+        }
+
+        .about-details {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .about-details h2 {
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .about-details p {
+            margin-bottom: 20px;
+            line-height: 1.5;
+            color: #666;
+        }
+
+        .about-details a {
+            display: block;
+            margin-bottom: 10px;
+            color: #4caf50;
+            text-decoration: none;
+        }
+    </style>
+
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Начало</a></li>
+            <li><a href="doctors.html">Доктори</a></li>
+            <li><a href="visit.php">Запази Час</a></li>
+            <li><a href="about.html">За Автора</a></li>
+            
+        </ul>
+    </nav>
+
+    <div class="about-container">
+        <div class="about-content">
+            <div class="about-image">
+                <img src="images/georgi.jpg" alt="Profile Picture">
+            </div>
+            <div class="about-details">
+                <h2>Георги Иванов</h2>
+                <p>Email: re2g@abv.bg</p>
+                <p><a href="https://github.com/GGI81">GitHub</a></p>
+                <p>
+                    Казвам се Георги Иванов и уча в Националната Търговско-Банкова Гимназия.
+                    В последната си година като ученик разбрах, че искам да се развивам в софтуерните и техническите науки.
+                    Училището ми даде страхотна основа, на която да стъпя и да започна да надграждам.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; Георги Иванов 12k №7. Всички права са запазени.</p>
+    </footer>
+
+    <script src="js/navScript.js"></script>
+</body>
+</html>
