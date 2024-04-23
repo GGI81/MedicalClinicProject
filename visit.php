@@ -6,7 +6,7 @@
     <title>Медицинска клиника Здраве</title>
     <link rel="icon" href="images/icon.ico">
     <link rel="stylesheet" href="style/common_style.css">
-    <link rel="stylesheet" href="style/specific_style/visit.css">
+    <link rel="stylesheet" href="style/specific_style/visitphp.css">
 </head>
 <body>
     <nav>
@@ -41,6 +41,9 @@
 
                 <input type="submit" value="Submit">
             </form>
+            <br>
+            <br>
+            <a href="takenVisits.php" class="button">Погледни взетите часове</a>
         </div>
     </div>
 
